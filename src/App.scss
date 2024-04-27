@@ -1,0 +1,55 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.AppWrapper {
+  height: 100vh; /* ビューポートの高さを100% */
+  width: 100vw; /* ビューポートの幅を100% */
+  overflow: hidden; /* スクロールバーを非表示にする */
+
+  text-align: center;
+  background-image: url(../public/img/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+
+  .appInner {
+    margin: auto;
+
+    header {
+      display: flex;
+      justify-content: center;
+      margin: 0 auto 3rem;
+      padding-top: 3rem;
+      .pizza1 {
+        rotate: (135deg);
+      }
+      .pizza2 {
+        rotate: (45deg);
+      }
+      img {
+        width: 100px;
+        height: 100%;
+      }
+    }
+
+    .body-inner {
+      width: 75%;
+      height: auto;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 2.3rem;
+      justify-content: center;
+      align-items: center;
+      .main-inner {
+        // margin: 5rem auto 0;
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        width: 100%;
+      }
+    }
+  }
+}

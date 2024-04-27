@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Playfair", serif;
+}
+
+body{
+  background: #bbc6fa;
+}
+.quote-box{
+  background: #fff;
+  width: 100%;
+  height: 150px;
+  // position: absolute;
+  // top: 35%;
+  // left: 50%;
+  // transform: translate(-50%,-50%);
+  padding: 8px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 10px 20px 0px rgba(0,0,0,0.15);
+}
+
+.quote-box h2 {
+  font-size:16px ;
+  // margin-bottom: 40px;
+  position: relative;
+}
+.quote-box h2::after {
+  content:'';
+  width: 75px;
+  height: 3px;
+  border-radius: 3px;
+  background: rgb(23,124,229);
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.quote-box blockquote{
+  font-size: 16px;
+  // min-height: 110px
+  margin-top: 1rem;
+}
+
+.quote-box blockquote::before,
+.quote-box blockquote::after{
+  content: '"';
+}
+
+.quote-box span {
+  display: block;
+  margin-top: 10px;
+  float: right;
+  position: relative;
+}
+
+.quote-box span::before{
+  content:'';
+  width: 20px;
+  height: 2px;
+  background: rgb(23,124,229);
+  position: absolute;
+  top: 50%;
+  left: -30px;
+}
+
+.quote-box div{
+  width: 100%;
+  // margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.quote-box button{
+  // background: rgb(23,124,229);
+    background: linear-gradient(135deg, #8be8ff, #177CE5);
+  color: #fff;
+  border-radius: 25px;
+  border: 1px solid #fff;
+  width: 88px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // margin: 5px;
+  cursor:pointer;
+}
